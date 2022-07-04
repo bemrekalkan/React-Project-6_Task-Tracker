@@ -1,17 +1,8 @@
-
-import './App.css';
-import AddTask from './components/AddTask';
-import Header from './components/Header';
-import Tasks from './components/Tasks';
+import Home from "./pages/Home";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="main-container">
-      <Header />
-      <AddTask />
-      <Tasks />
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
