@@ -10,6 +10,9 @@ const Header = ({ tasks, setTasks }) => {
   });
 
   //? 📢 React doesn't update states instantly, it updates them in bulk. States are updated with async logic to avoid over-rendering
+
+  //! By default, React may not change states immediately.   Batch updates states to reduce extra renders. Consecutive states in an event handler are updated collectively at the end of the event. The states are updated in order of arrival. It is necessary to pay attention to this when using interconnected states in the same event.
+
   const handleShow = () => {
     if (show) {
       setBtnStyle({
