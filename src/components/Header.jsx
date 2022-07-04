@@ -1,5 +1,10 @@
 const Header = () => {
-  return <header>Header</header>;
+  return (
+    <header>
+      <h1>TASK TRACKER</h1>
+      <AddTaskForm />
+    </header>
+  );
 };
 
 export default Header;
