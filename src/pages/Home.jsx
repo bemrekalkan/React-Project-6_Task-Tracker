@@ -8,7 +8,7 @@ const Home = () => {
   const [tasks, setTasks] = useState(data);
   return (
     <div>
-      <Header tasks={tasks} />
+      <Header tasks={tasks} setTasks={setTasks} />
       <ShowTask />
     </div>
   );

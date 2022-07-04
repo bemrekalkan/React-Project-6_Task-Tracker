@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const AddTaskForm = ({ tasks }) => {
+const AddTaskForm = ({ tasks, setTasks }) => {
   const [task, setTask] = useState("");
   const [day, setDay] = useState("");
 
@@ -8,6 +8,9 @@ const AddTaskForm = ({ tasks }) => {
     e.preventDefault();
     const id = new Date().getTime();
     const newTask = { id: id, task: task, day: day, isDone: false };
+    setTasks([...tasks, newTask]);
+    setTask("");
+    setDay("");
   };
 
   return (
