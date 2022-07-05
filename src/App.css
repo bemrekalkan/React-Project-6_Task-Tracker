@@ -8,6 +8,7 @@ body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
   background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  overflow: hidden;
 }
 .container {
   background-image: linear-gradient(
