@@ -24,7 +24,7 @@ body {
 
 .header {
   text-align: center;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .btn {
@@ -38,6 +38,7 @@ body {
   padding: 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  margin-top: 1rem;
 }
 
 .form-control {
